@@ -6,17 +6,17 @@
        
         <div class="field">
             <label>Title</label>
-            <input type="text" name="blog[title]" value="<%= blog.title %>">
+            <input type="text" name="blog[title]" value="<%= blog.title %>" required>
         </div>
        
           <div class="field">
             <label>Image</label>
-            <input type="text" name="blog[image]" value="<%= blog.image %>">
+            <input type="text" name="blog[image]" value="<%= blog.image %>" required>
         </div>
          
           <div class="field">
             <label>Description</label>
-            <textarea name="blog[body]" placeholder="blog post goes here"> <%= blog.body %> </textarea>
+            <textarea name="blog[body]" required placeholder="blog post goes here"> <%= blog.body %> </textarea>
         </div>
         <input class="ui pink basic button" type="submit">
     </form>
